@@ -1,0 +1,14 @@
+// Styles pour l'éditeur Gutenberg
+.wp-block-effi-related-pages-related-pages {
+  // En cas de non rendu du serveur, afficher un message clair
+  [data-block] {
+    min-height: 80px;
+    background-color: #f0f0f0;
+    border: 1px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-family: sans-serif;
+  }
+}
