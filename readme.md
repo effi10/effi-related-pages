@@ -1,4 +1,4 @@
-=== effi Related Pages ===
+##effi Related Pages
 Contributors: Cédric GIRARD
 Tags: block, gutenberg, internal linking, related pages
 Requires at least: 5.8
@@ -9,7 +9,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Affiche dynamiquement les pages enfants ou sœurs de la page actuelle via un bloc Gutenberg.
 
-== Description ==
+##Description
 
 Ce plugin ajoute un bloc Gutenberg "Pages Associées" qui permet d'améliorer facilement le maillage interne de votre site.
 Affichez une liste ou une grille de pages enfants (sous-pages) ou de pages sœurs (pages de même niveau hiérarchique).
@@ -26,14 +26,14 @@ Le bloc est entièrement configurable depuis l'éditeur de blocs et dispose d'un
 * Responsive par défaut : la grille se transforme en liste sur les écrans plus petits.
 * Page de réglages pour définir les valeurs par défaut des nouveaux blocs.
 
-== Installation ==
+##Installation
 
 1. Téléversez le dossier `effi-related-pages` dans le répertoire `/wp-content/plugins/`.
 2. Activez le plugin depuis le menu 'Extensions' de WordPress.
 3. Allez dans le menu "effi Related Pages" -> "Paramètres" pour configurer les options globales.
 4. Dans l'éditeur de pages, ajoutez le bloc "Pages Associées".
 
-== Changelog ==
+##Changelog
 
 = 1.0.0 =
 * Lancement initial du plugin.
