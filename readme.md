@@ -1,5 +1,7 @@
 **effi Related Pages**
 
+EN COURS DE DEVELOPPEMENT / MISE AU POINT
+
 *Contributors: Cédric GIRARD
 Tags: block, gutenberg, internal linking, related pages
 Requires at least: 5.8
