@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "effi-related-pages/related-pages",
+	"version": "1.5.0",
+	"title": "effi Related Pages",
+	"category": "widgets",
+	"icon": "networking",
+	"description": "Affiche une liste ou une grille de pages enfants ou sœurs.",
+	"attributes": {
+		"relationType": { "type": "string", "default": "children" },
+		"postsToShow": { "type": "number", "default": 0 },
+		"displayFeaturedImage": { "type": "boolean", "default": true },
+		"imageSize": { "type": "string", "default": "medium" },
+		"imageRatio": { "type": "string", "default": "16:9" },
+		"imageCrop": { "type": "boolean", "default": true },
+		"imagePosition": { "type": "string", "default": "top" },
+		"titleTag": { "type": "string", "default": "h3" },
+		"displayExcerpt": { "type": "boolean", "default": true },
+		"excerptLength": { "type": "number", "default": 25 },
+		"displayLayout": { "type": "string", "default": "grid" },
+		"columns": { "type": "number", "default": 3 },
+		"align": { "type": "string" },
+		"orderBy": { "type": "string", "default": "title" },
+		"order": { "type": "string", "default": "ASC" }
+	},
+	"supports": {
+		"align": [ "wide", "full" ],
+		"html": false,
+		"color": { "text": true, "background": true, "link": true },
+		"spacing": { "margin": true, "padding": true },
+		"typography": { "fontSize": true }
+	},
+	"textdomain": "effi-related-pages",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor.css",
+	"render": "file:../public/display-related-pages.php"
+}

@@ -1,0 +1,72 @@
+/* Styles existants... */
+.wp-block-effi-related-pages-related-pages {
+    border: 1px dashed #ccc;
+    padding: 15px;
+}
+.effi-related-pages-wrapper {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.effi-related-pages-wrapper.is-grid {
+    display: grid;
+    gap: 1em;
+}
+.effi-related-pages-wrapper .effi-page-item {
+    border: 1px solid #eee;
+    padding: 1em;
+    border-radius: 4px;
+}
+.effi-related-pages-wrapper .effi-page-item__image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.effi-related-pages-wrapper .effi-page-item__title {
+    margin: 0 0 0.5em 0;
+    font-weight: bold;
+}
+.effi-related-pages-wrapper .effi-page-item__excerpt {
+    font-size: 0.9em;
+    color: #555;
+}
+.wp-block-effi-related-pages-related-pages .effi-page-item__excerpt {
+    color: inherit;
+}
+
+/* --- AJOUTER TOUTES LES NOUVELLES RÈGLES CI-DESSOUS --- */
+
+/* Position HAUT */
+.effi-page-item.image-pos-top .effi-page-item__image-container {
+    margin-bottom: 1em;
+}
+
+/* Position BAS */
+.effi-page-item.image-pos-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.effi-page-item.image-pos-bottom .effi-page-item__image-container {
+    margin-top: 1em;
+}
+
+/* Positions GAUCHE & DROITE */
+.effi-page-item.image-pos-left,
+.effi-page-item.image-pos-right {
+    display: flex;
+    gap: 1.5em;
+    align-items: flex-start;
+}
+.effi-page-item.image-pos-left {
+    flex-direction: row;
+}
+.effi-page-item.image-pos-right {
+    flex-direction: row-reverse;
+}
+.effi-page-item.image-pos-left .effi-page-item__image-container,
+.effi-page-item.image-pos-right .effi-page-item__image-container {
+    flex-basis: 35%;
+    flex-shrink: 0;
+}
+.effi-page-item.image-pos-left .effi-page-item__content,
+.effi-page-item.image-pos-right .effi-page-item__content {
+    flex-basis: 65%;
+}

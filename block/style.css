@@ -1,0 +1,48 @@
+/**
+ * Frontend Styles for effi Related Pages Block
+ */
+.wp-block-effi-related-pages-related-pages .effi-page-item__excerpt {
+    /* Force l'extrait à hériter de la couleur de texte définie sur le bloc parent */
+    color: inherit;
+}
+
+/* --- LOGIQUE DE POSITION DE L'IMAGE --- */
+
+/* Position HAUT (par défaut, mais on s'assure de la marge) */
+.effi-page-item.image-pos-top .effi-page-item__image-container {
+    margin-bottom: 1em;
+}
+
+/* Position BAS */
+.effi-page-item.image-pos-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.effi-page-item.image-pos-bottom .effi-page-item__image-container {
+    margin-top: 1em;
+}
+
+/* Positions GAUCHE & DROITE (maintenant actives sur TOUS les écrans) */
+.effi-page-item.image-pos-left,
+.effi-page-item.image-pos-right {
+    display: flex;
+    gap: 1.5em;
+    align-items: flex-start;
+}
+.effi-page-item.image-pos-left {
+    flex-direction: row;
+}
+.effi-page-item.image-pos-right {
+    flex-direction: row-reverse;
+}
+
+/* On définit la largeur de l'image et du contenu */
+.effi-page-item.image-pos-left .effi-page-item__image-container,
+.effi-page-item.image-pos-right .effi-page-item__image-container {
+    flex-basis: 35%;
+    flex-shrink: 0;
+}
+.effi-page-item.image-pos-left .effi-page-item__content,
+.effi-page-item.image-pos-right .effi-page-item__content {
+    flex-basis: 65%;
+}
